@@ -26,12 +26,12 @@ def getRoutes(request):
 
     return Response(routes)
 
-@api_view()
+@api_view(['GET'])
 def getProducts(request):
     return Response(products)
 
 
-@api_view()
+@api_view(['GET'])
 def getProduct(request, pk):
     product = []
     for i in products:
